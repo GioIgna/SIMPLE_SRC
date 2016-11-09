@@ -12,5 +12,6 @@ if(! $conn_db) {
 } else {
 	echo "SEI CONNESSO AL DB '". $db_database . "' <br />";
 }
-mysqli_close($conn_db);
+//NON VA CHIUSA LA CONNESSIONE
+//mysqli_close($conn_db);
 ?>

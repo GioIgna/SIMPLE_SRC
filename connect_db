@@ -1,0 +1,17 @@
+<?php
+$db_hostname="localhost";
+$db_username="root";
+$db_password="password";
+$db_database="PROVA_DB";
+
+//CONNESSIONE AL DB
+$conn_db= mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
+
+if(! $conn_db) {
+	die ("CONNESSIONE FALLITA: ".mysqli_error(). "<br />");
+} else {
+	echo "SEI CONNESSO AL DB '". $db_database . "' <br />";
+}
+//NON VA CHIUSA LA CONNESSIONE
+//mysqli_close($conn_db);
+?>

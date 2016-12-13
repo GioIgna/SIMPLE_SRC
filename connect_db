@@ -1,8 +1,8 @@
 <?php
-$db_hostname="localhost";
-$db_username="root";
-$db_password="password";
-$db_database="PROVA_DB";
+$db_hostname="???";
+$db_username="???";
+$db_password="???";
+$db_database="???";
 
 //CONNESSIONE AL DB
 $conn_db= mysqli_connect($db_hostname, $db_username, $db_password, $db_database);

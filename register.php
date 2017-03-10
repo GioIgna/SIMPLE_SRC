@@ -15,9 +15,9 @@ if (validazione_nome_cognome($_POST["nome"])) {
 				if (validazione_password($_POST["password"], $_POST["conferma_password"] , 5 , 10)) {
 					#salvo i dati nelle variabili
 					#effettuo l'inserimento
-					$nome 		= $_POST["nome"];		$_SESSION["nome"]	  = $nome;
+					$nome 		= $_POST["nome"];	$_SESSION["nome"]     = $nome;
 					$cognome 	= $_POST["cognome"];	$_SESSION["cognome"]  = $cognome;
-					$email 		= $_POST["email"];		$_SESSION["email"]	  = $email;
+					$email 		= $_POST["email"];	$_SESSION["email"]    = $email;
 					$username 	= $_POST["username"];	$_SESSION["username"] = $username;
 					$password 	= $_POST["password"];	$_SESSION["password"] = $password;
 					//include ('connect_db.php');

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRY</title>
+</head>
+<body>
+
+<form action="" method="get">
+	<label>Find: </label><input type="text" onkeyup="showHint(this.value)">
+</form>
+
+<p>Presenti: <span id="trovato"></span></p>
+
+<script>
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("trovato").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("trovato").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "result.php?q="+str, true);
+  xhttp.send();   
+}
+</script>
+
+</body>
+</html>

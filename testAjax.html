@@ -24,7 +24,7 @@ function showHint(str) {
       document.getElementById("trovato").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "result.php?q="+str, true);
+  xhttp.open("GET", "result.php?find="+str, true);
   xhttp.send();   
 }
 </script>
